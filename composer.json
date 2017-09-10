@@ -1,0 +1,20 @@
+{
+    "name": "gameplayjdk/slim-boilerplate",
+    "description": "A coding-by-convention boilerplate for Slim apps.",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "GameplayJDK",
+            "email": "github@gameplayjdk.de"
+        }
+    ],
+    "require": {
+        "slim/slim": "^3.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "lib\\": "app/lib/"
+        }
+    }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "slim-boilerplate",
+  "authors": [
+    "GameplayJDK <github@gameplayjdk.de>"
+  ],
+  "description": "A coding-by-convention boilerplate for Slim apps.",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1"
+  }
+}
