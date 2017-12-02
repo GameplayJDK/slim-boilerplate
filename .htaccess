@@ -4,7 +4,7 @@ RewriteEngine On
 
 # RewriteBase /
 
-RewriteRule ^(app/|public/|vendor/) - [R=404]
+RewriteRule ^(app/|bin/|public/|vendor/) - [R=404]
 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d

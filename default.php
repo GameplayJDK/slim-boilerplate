@@ -9,6 +9,9 @@ require(__DIR__ . '/app' . '/function.php');
 $config = [
     'settings' => require(__DIR__ . '/app' . '/config.php'),
 ];
+
+require(__DIR__ . '/app' . '/environment.php');
+
 $app = new App($config);
 
 require(__DIR__ . '/app' . '/dependency.php');
