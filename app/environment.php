@@ -18,7 +18,16 @@ if (is_sapi('cli'))
         ];
     }
 
-    $path_info = '/' . implode('/', $argv);
+    if ((count($path_info) === 1) && (str_starts_with(current($path_info), '/')))
+    {
+        # Assume the argument is a fully qualified path, e.g.
+        # /some/fully/qualified/path
+        $path_info = current($path_info);
+    }
+    else
+    {
+        $path_info = '/' . implode('/', $path_info);
+    }
 
     $environment = [
         'environment' => Environment::mock([
